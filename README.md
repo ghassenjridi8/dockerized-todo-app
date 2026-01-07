@@ -48,7 +48,7 @@ To get this project up and running on your local machine, follow these steps:
     ```
 
 
-3. **create .env file in the root folder and put the env variables**
+3. **Create .env file in the root folder and put the env variables**
     ```env
     NODE_ENV=development
     PORT=9002
@@ -56,18 +56,18 @@ To get this project up and running on your local machine, follow these steps:
     JWT_SECRET="your_jwt_secret_key"
     ```
 
-4. **build the docker image for the app from the Dockerfile**
+4. **Build the docker image for the app from the Dockerfile**
     ```bash
     docker compose build
     ```
 
-5. **create database schema and run the required migrations**
+5. **Create database schema and run the required migrations**
     ```bash
     docker compose run app npx prisma migrate dev --name init
     ```
 
 
-6. **run app container and Postgres database container**
+6. **Run app container and Postgres database container**
     ```cmd
     docker compose up
     ```
@@ -76,7 +76,7 @@ To get this project up and running on your local machine, follow these steps:
 
 ## Contact
 
-If you have any questions or comments about my Typescript REST API project, please contact:  
+If you have any questions or comments about my todo full-stack project, please contact:  
 **Ghassen** – [Jridi59@gmail.com](mailto:Jridi59@gmail.com)  
 - [LinkedIn]() *(https://www.linkedin.com/in/ghassen-jridi-94b81034a/)*
 

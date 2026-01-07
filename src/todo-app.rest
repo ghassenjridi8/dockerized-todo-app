@@ -1,0 +1,56 @@
+### GET /
+GET http://localhost:9002
+
+### Register a user
+POST http://localhost:9002/auth/register
+Content-Type: application/json
+
+{
+    "username": "test145@gmail.com",
+    "password": "aaaaaa"
+}
+
+
+### login a user
+POST http://localhost:9002/auth/login
+Content-Type: application/json
+
+{
+    "username": "test145@gmail.com",
+    "password": "aaaaaa"
+}
+
+
+### fetch all todos
+GET http://localhost:9002/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ0ZXN0MTQ1QGdtYWlsLmNvbSIsImlhdCI6MTc2NzYyNjU1M30.sW_Dc7GvOS9fJAPjYZwBhy-54H407-XcBPjeZFza4mM
+Content-Type: application/json
+
+
+
+###create a new todo
+POST http://localhost:9002/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0MTNAZ21haWwuY29tIiwiaWF0IjoxNzY3NjI0NzU5fQ.nmciJuvzCbrjrcxF9PvXlehrGilu6xY47CT3IfLf9kE
+Content-Type: application/json
+
+{
+    "task": "go to the gym" 
+}
+
+
+###delete a todo
+DELETE http://localhost:9002/todos/7
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJ0ZXN0MTRAZ21haWwuY29tIiwiaWF0IjoxNzY3NjI0ODMzfQ._GBlha-T4C5KV7-9kqc-9Nz6bXjcHkMv8fl51EZWGmU
+
+
+
+###update a todo
+PATCH http://localhost:9002/todos/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NzU1NTM1Nn0.NXslP0AJwx95KLrq_Pc8N0hR-Vs0sTDfw8ArdjaiqB0
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
